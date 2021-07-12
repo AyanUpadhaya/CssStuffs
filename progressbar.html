@@ -1,0 +1,55 @@
+<html lang='en'>
+<head>
+<meta name="developer" content="Ayan">
+<style type="text/css">
+
+.container{
+	width: 80鈩�;
+	height: 20px;
+	margin: auto;
+	border: 1px solid #fff;
+	position:relative
+}
+#progress{
+	height:20px;
+	animation-name: bar;
+	animation-duration:6s;
+	animation-iteration-count:3;
+}
+
+
+@keyframes bar{
+	0%{
+		width:0px;
+	}
+	10%{
+	 	width:20px;
+	 	background-color:blue;
+	}
+	40%{
+		width:40px;
+		background-color:blue;
+	}
+	50%{
+		width:60px;
+		background-color:blue;
+	}
+	100%{
+		width:100%;
+		background-color:blue;
+	}
+	
+}
+</style>
+</head>
+
+<body style="background:#262626;">
+<!-- mini progressbar animation -->
+<h2 style ="color:#fff;">Progress Bar</h2>
+<div class="container">
+	<div id="progress"></div>
+</div>
+
+</body>
+
+</html>
